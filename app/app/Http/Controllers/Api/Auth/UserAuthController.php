@@ -32,6 +32,7 @@ class UserAuthController extends Controller
                    Carbon::now()->addMinutes(2));
 
 
+
         (new OtpFactory())->generate($request->type)->send($request->value, $code);
 
         return 'success';
