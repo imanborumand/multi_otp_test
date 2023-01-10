@@ -21,5 +21,6 @@ Route::prefix('auth/login')
 
 
     Route::post('step-one', 'stepOne');
+    Route::post('step-two', 'stepTwo');
 
 });
